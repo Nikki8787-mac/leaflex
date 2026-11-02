@@ -20,7 +20,7 @@ jobs:
       - name: Download release asset
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release download v107 --pattern 'LeafLex-v107.zip' --dir .
+       run: gh release download v107 --repo Nikki8787-mac/leaflex --pattern 'LeafLex-v107.zip' --dir .
       - name: Unzip
         run: |
           mkdir site
